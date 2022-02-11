@@ -46,8 +46,8 @@ public class stringsAttached {
 //		    codePointAt is a method that returns an int value representing the Unicode value of the character at the specified index in a string.
 //		        first index
 		        String myStr = "Hello";
-		        int result = myStr.codePointAt(0);
-		        System.out.println(result);
+		        int result1 = myStr.codePointAt(0);
+		        System.out.println(result1);
 		
 		        
 //		replace()
