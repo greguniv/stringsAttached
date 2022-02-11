@@ -2,33 +2,10 @@ package stringMethods;
 
 public class stringsAttached {
 	
-	
-	
-	public static void compareTwoStrings(String str, String str1) {
-		//compareTo()	Compares two strings lexicographically 	--> Return type --> int
-		//getBytes()	Encodes this String into a sequence of bytes using the named charset,
-		//storing the result into a new byte array	Returns type --> byte[]
-		//An int value: 0 if the string is equal to the other string.
-		//< 0 if the string is lexicographically less than the other string
-		//> 0 if the string is lexicographically greater than the other string (more characters)
-		//This means that the words are alphabetically ordered based on their component alphabets.
-		
-		int result = (str.compareTo(str1));
-		
-		if (result == 0) {
-			System.out.println("The Strings "+ str + " and " + str1 + " are lexicographically the same");
-		}else if (result < 0){
-			System.out.println("The String "+ str + " is lexicographically LESS than "+ str1);			
-		}else {
-			System.out.println("The String "+ str + " is lexicographically GREATER than "+ str1);	
-			
-			
-	
+
 	public static void main(String[] args) {
-		// trim()
-		
-//		Removes whitespace from both ends of a string
-		
+		// trim()		
+//		Removes whitespace from both ends of a string		
 		String greeting = "       Whatup Doc!";
 		String farewell = "       Say" + " Less";
 	    System.out.println(greeting);
@@ -36,31 +13,43 @@ public class stringsAttached {
 	    System.out.println(farewell);
 	    System.out.println(farewell.trim());
 	    
+	    
 //	    replaceAll()	
 //	    Replaces each substring of this string that matches the given regular 
-//	    expression with the given replacement
-	    
+//	    expression with the given replacement	    
 	    String toBeReplaced = "Show me the money";
 	    String replaceWith = "You had me at hello";
         System.out.println(toBeReplaced);
 	    System.out.println(toBeReplaced.replaceAll(toBeReplaced,        replaceWith));
+	    
+	    
+//		compareTo()
+//	    codePointAt is a method that returns an int value representing the Unicode value of the character at the specified index in a string.
+//      first index
+//   SYNTAX:   public int codePointAt(int index)
+      String myString = "Bonjour chez vous";
+      int result = myString.codePointAt(3);
+      System.out.println(result);
+//      Change the index value by index
  
+      
+	    // getBytes()
 	  //The getBytes() method encodes a given String into a sequence of bytes and returns an array of bytes. 
-	  		//The method can be used in below two ways:
-	  			 
-	  	       byte[] array1 = str.getBytes();
-	  	       System.out.print("Default Charset encoding:");
-	  	       for(byte b: array1){
-	  	           System.out.print(b);
+	  		//The method can be used in below two ways:	  			 
+//	  	       byte[] array1 = str.getBytes();
+//	  	       System.out.print("Default Charset encoding:");
+//	  	       for(byte b: array1){
+//	  	           System.out.print(b);
 	  	           
-//		codePointAt()
-		 
+	  	           
+//		codePointAt()		 
 //		    codePointAt is a method that returns an int value representing the Unicode value of the character at the specified index in a string.
 //		        first index
 		        String myStr = "Hello";
 		        int result = myStr.codePointAt(0);
 		        System.out.println(result);
 		
+		        
 //		replace()
 		      //Return a new string where all "l" characters are replaced with "p" characters:  
 		       
